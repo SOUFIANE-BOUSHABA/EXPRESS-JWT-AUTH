@@ -1,0 +1,31 @@
+
+GET http://localhost:5000
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiI2NDc4NTc0OTE0NGNjYTRiNDE1ZDEwZDUiLCJpc3MiOiJwaWNrdXJwYWdlLmNvbSIsImlhdCI6MTY4NTcyNTI3NywiZXhwIjoxNjg1NzI1MzA3fQ.5yvMPtFIABVV3Z5060pTez5LgFWl95ns1Xxm4ddK18U
+###
+
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+	"email": "iokufhojijilukhfgtt@gmail.com", 
+	"password": "12YIhfhkUI"
+}
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+	"email": "iojfpg@gmail.com",
+	"password": "12YIUI"
+}
+
+
+
+###
+POST http://localhost:5000/auth/refresh-token
+Content-Type: application/json
+
+{
+	"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiI2NDc4NTc0OTE0NGNjYTRiNDE1ZDEwZDUiLCJpc3MiOiJwaWNrdXJwYWdlLmNvbSIsImlhdCI6MTY4NTYxMjE3NywiZXhwIjoxNzE3MTY5Nzc3fQ.c5mftMVKed9ijfAb8My8fCvFngJoSj2dtf4MEA_yWsQ"
+}
